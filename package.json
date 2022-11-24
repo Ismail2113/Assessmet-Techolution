@@ -6,6 +6,8 @@
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js",
     "start": "nx serve",
+    "aquatics": "nx serve aquatics --port 4200",
+    "pets": "nx serve pets --port 4201",
     "build": "nx build",
     "test": "nx test"
   },

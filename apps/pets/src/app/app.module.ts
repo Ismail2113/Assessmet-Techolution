@@ -12,6 +12,5 @@ import { NxWelcomeComponent } from './nx-welcome.component';
   imports: [BrowserModule,UiNavMenuModule,RouterModule.forRoot(appRoutes)],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [],
 })
 export class AppModule {}
