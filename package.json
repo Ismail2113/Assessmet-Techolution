@@ -8,6 +8,7 @@
     "start": "nx serve",
     "aquatics": "nx serve aquatics --port 4200",
     "pets": "nx serve pets --port 4201",
+    "plants": "nx serve plants --port 4202",
     "build": "nx build",
     "test": "nx test"
   },

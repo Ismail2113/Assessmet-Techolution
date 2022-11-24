@@ -13,15 +13,15 @@ export class NavMenuComponent {
   }
 
   callFirstApp(){
-    window.open('http://localhost:4200/aquatics', "_blank");
+    window.open('http://localhost:4200/aquatics', "_self");
   }
 
   callSecondApp(){
-    window.open('http://localhost:4201/pets', "_blank");
+    window.open('http://localhost:4201/pets', "_self");
   }
 
   callThirdApp(){
-    // this.router.navigate([`${this.windowLocation}/plants`]);
+    window.open('http://localhost:4202/plants', "_self");
   }
 
 }

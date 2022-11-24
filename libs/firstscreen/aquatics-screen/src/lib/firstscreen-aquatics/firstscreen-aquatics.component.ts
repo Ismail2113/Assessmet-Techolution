@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'assessment-tech-firstscreen-aquatics',
@@ -6,6 +6,23 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./firstscreen-aquatics.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class FirstscreenAquaticsComponent {
+export class FirstscreenAquaticsComponent implements OnInit {
+
+  applicationName = '';
+
+  ngOnInit(){
+    this.checkApplicationType();
+    }
+
+    checkApplicationType(){
+      const path = window.location.pathname;
+      if(path == '/aquatics'){
+        this.applicationName = 'Aquatics';
+      }else if(path == '/pets'){
+        this.applicationName = 'Pets';
+      }else if(path == '/plants'){
+        this.applicationName = 'Plants';
+      }
+    }
 
 }
